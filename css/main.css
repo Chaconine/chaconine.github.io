@@ -102,10 +102,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Change font to Playfair display if available */
+/* Add font Kraskario */
+
+@font-face {
+    font-family: 'krkaregular';
+    src: url('kraskario-webfont.woff2') format('woff2'),
+         url('kraskario-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Change font to Kraskario if available */
 
 body {
-  font-family: 'Playfair display', Arial, sans-serif;
+  font-family: 'Kraskario', Arial, sans-serif;
   font-size: 45 px;
 }
 
@@ -121,7 +132,7 @@ body {
   float: left;
   color: #FFF!important;
   text-align: center;
-  padding: 2% 2%;
+  padding: 1% 1%;
   text-decoration: none;
   font-size: 1em;
   font-weight: 300;
@@ -152,7 +163,7 @@ body {
 }
 
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 50px;
 
 
  /* ==========================================================================

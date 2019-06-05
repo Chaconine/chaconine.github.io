@@ -52,8 +52,10 @@ Libero justo laoreet sit amet cursus. Facilisis leo vel fringilla est ullamcorpe
   <script>
   window.onscroll = function() {myFunction()};
 
-  var navbar = document.getElementsByClassName("topnav");
+  var navbar = document.getElementsByClassName("topnav")[0];
   var sticky = navbar.offsetTop;
+
+  console.log(navbar)
 
   function myFunction() {
       navbar.classList.add("sticky")
