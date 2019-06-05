@@ -102,21 +102,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Add font Kraskario */
+/* Add font Kraskario and Larke Sans*/
 
 @font-face {
     font-family: 'krkaregular';
-    src: url('kraskario-webfont.woff2') format('woff2'),
-         url('kraskario-webfont.woff') format('woff');
+    src: url('fonts/kraskario-webfont.woff2') format('woff2'),
+         url('fonts/kraskario-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'larke_sans_boldregular';
+    src: url('fonts/larke_sans/larke_sans_bold-webfont.woff2') format('woff2'),
+         url('fonts/larke_sans/larke_sans_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Change font to Kraskario if available */
 
 body {
-  font-family: 'Kraskario', Arial, sans-serif;
+  font-family: 'krksaregular', Arial, sans-serif;
   font-size: 45 px;
 }
 
@@ -128,11 +135,20 @@ body {
 }
 
 /* Style the links inside the navigation bar */
+
+.topnav {
+  height: 10%;
+  width: 100%;
+}
+
 .topnav a {
-  float: left;
+  display: inline-block;
   color: #FFF!important;
   text-align: center;
-  padding: 1% 1%;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+  padding-right: 5%;
+  padding-left: 0%;
   text-decoration: none;
   font-size: 1em;
   font-weight: 300;
@@ -145,10 +161,15 @@ body {
   border-bottom: 3px solid #FFF;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  border-bottom: 3px solid #FFF;
-  color: black;
+.logo {
+  font-size: 2em!important;
+  font-family: larke_sans_boldregular, Arial, sans-serif;
+  float:left!important;
+  padding-top: 0.5%!important;
+  padding-bottom: 0.5%!important;
+  padding-right: 15%!important;
+  padding-left: 5%!important;
+  border-bottom: none!important;
 }
 
 /* Add padding to the content of the page */
@@ -163,8 +184,13 @@ body {
 }
 
 .sticky + .content {
-  padding-top: 50px;
+  padding-top: 10%;
 
+/* Modify the home page image */
+
+#homepageimage {
+  max-width:70%;
+}
 
  /* ==========================================================================
    Helper classes
