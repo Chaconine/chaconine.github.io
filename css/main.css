@@ -127,16 +127,11 @@ body {
   font-size: 45 px;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a black background color to the top navigation and style the links */
 
 .topnav {
   background-color: rgba(51, 51, 51, 0.7);
   overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-
-.topnav {
   height: 50px;
   width: 100%;
 }
@@ -177,9 +172,9 @@ body {
 
 /* Modify the home page image */
 
-#homepageimage {
+.mainhomepageimage {
   display: block;
-  padding-top: 10%;
+  padding-top: 8%;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
@@ -236,13 +231,15 @@ body {
    border-bottom: 1px solid black;
 }
 
-.card h4 {
-
-}
-
 .contactinfo {
   padding-top: 1%;
   font-size: .9em;
+}
+
+/* Change the main body to the same width as the rest of the page */
+.mainbody {
+  width: 70%;
+  padding-left: 15% ;
 }
 
 
