@@ -29,12 +29,12 @@
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: rgb(252,254,255);
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: rgb(252,254,255);
     text-shadow: none;
 }
 
@@ -137,7 +137,7 @@ body {
 /* Style the links inside the navigation bar */
 
 .topnav {
-  height: 10%;
+  height: 50px;
   width: 100%;
 }
 
@@ -145,20 +145,18 @@ body {
   display: inline-block;
   color: #FFF!important;
   text-align: center;
-  padding-top: 1.5%;
+  padding-top: 1.2%;
   padding-bottom: 1%;
   padding-right: 5%;
   padding-left: 0%;
   text-decoration: none;
   font-size: 1em;
   font-weight: 300;
-  border-bottom: 3px solid transparent;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  color: black;
-  border-bottom: 3px solid #FFF;
+  color: black!important;
 }
 
 .logo {
@@ -169,7 +167,6 @@ body {
   padding-bottom: 0.5%!important;
   padding-right: 5%!important;
   padding-left: 5%!important;
-  border-bottom: none!important;
 }
 
 .sticky {
@@ -191,13 +188,13 @@ body {
 /* Create two unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 10px;
+  padding: 1%;
 }
 
 .left {
   padding-left: 15%;
   width: 50%;
-}
+} 
 
 .right {
   width: 20%;
@@ -205,7 +202,7 @@ body {
 
 /* Introduces a small amount of space before main text */
 .main:before {
-  padding-top: 10%;
+  padding-top: 20%;
 }
 
 /* Clear floats after the columns */
@@ -213,6 +210,54 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Modify the summary introduction on the homepage */
+.summaryintro {
+  padding-bottom: 0%;
+}
+
+/* Modify link colors so that they're orange and pop-out */
+.orangelink {
+  color: rgba(51, 51, 51);
+}
+.orangelink:hover {
+  color: rgba(0,0,0);
+}
+
+.orangelink:visited {
+  color: purple;
+}
+
+/* Add a card effect for articles */
+.card {
+   padding-top: 7%;
+   padding-bottom: 1%;
+   border-bottom: 1px solid black;
+}
+
+.card h4 {
+
+}
+
+.contactinfo {
+  padding-top: 1%;
+  font-size: .9em;
+}
+
+
+/* Change columns to 100% when below 800 px */
+@media only screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    padding: 0%;
+  }
+}
+
+/* Change the homepageimages to fit their div containers */
+.homepageimages {
+  max-width: 100%;
+  max-height: 100%;
 }
 
  /* ==========================================================================
