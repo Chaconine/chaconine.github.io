@@ -1,0 +1,80 @@
+
+/* Change the widths of each of the columns to 40% */
+
+.left {
+	padding-left: 10%;
+	width: 40%;
+} 
+
+.right {
+  	position: absolute;
+  	width: 40%;
+  	left: 50%;
+  	top: 50%;
+  	transform: translateY(-50%);
+} 
+
+.homepageimages {
+	position: inline-block;
+}
+
+/* Add personnel card template for each use */
+
+.personcard {
+   	position: relative;
+   	overflow: hidden;
+   	margin-left: 10%;
+   	padding-top: 3%;
+   	padding-bottom: 3%;
+   	width: 80%;
+   	border-bottom: 1px solid black;
+}
+
+/* Add padding to the main class to space out the top a bit */
+
+.main {
+	padding-top: 5%;
+}
+
+.personnel {
+	padding-left: 10%;
+}
+
+/* Define the former personnel columns */
+
+.row {
+	position: relative;
+	overflow: hidden;
+	margin-left: 10%;
+	width: 80%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.formerleft {
+	float: left;
+	width: 46.25%;
+}
+
+.formerright {
+	float: right;
+	width: 46.25%;
+}
+
+.personnelcard {
+   	position: relative;
+   	overflow: hidden;
+   	padding-top: 1%;
+   	padding-bottom: 1%;
+   	width: 100%;
+}
+
+.leftpersonnel {
+	padding-left: 10%;
+	width: 40%;
+}
+
+.rightpersonnel {
+	width: 40%;
+}
+

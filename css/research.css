@@ -1,0 +1,58 @@
+
+/* Change the cofactor image to float to the right */
+
+.researchpageimages {
+  padding: 2%;
+  float: right;
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  transform: translate(-50%, -40%);
+}
+
+.researchpageimages:after {
+  clear: right;
+}
+
+/* Added a modified card effect for the research page */
+
+.researchcard {
+  padding-top: 2%;
+}
+
+.researchcolumn {
+  height: auto;
+  position: relative;
+}
+
+.leftresearchcolumn {
+  width: 54%;
+} 
+
+.rightresearchcolumn {
+  width: 44%;
+}
+
+/* Modify the research title */
+
+.researchtitle {
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
+}
+
+/* Modify the website columns when the size of the page changes */
+@media only screen and (max-width: 800px) {
+  .leftresearchcolumn {
+    width: 80%;
+    padding: 0% 10% 0% 10%;
+    position: block;
+  }
+  .rightresearchcolumn {
+    width: 70%;
+    padding: 0% 15% 0% 15%;
+  }
+  .researchpageimages {
+    display: none;
+}
+  }
+}

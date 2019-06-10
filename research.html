@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Taga Lab at UC Berkeley</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/research.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <!-- 20190526 Import in Playfair Display font -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="topnav">
+    <a href="index.html" class="logo">THE TAGA LAB</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="#publications">Publications</a>
+    <a href="#lablife">Lab Life</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <img src="img/research_images/researchimagemain.png" alt="Homepage image with corrinoids on it" class="mainhomepageimage">
+
+  <div class="main mainbody"> 
+    <div >
+        <h3>How and why do microbes rely on each other?</h3>
+        <p>In the natural world, microbes live in communities where individuals rely on one another. The vast majority of microbes cannot produce all of the nutrients they require, and instead depend on other microbes to produce nutrients such as amino acids and vitamins. This type of microbial interaction, nutrient sharing, is a major driver of microbial community assembly and function.</p>
+
+        <p>To study how nutrient sharing occurs in microbial communities, <b>we specifically focus on vitamin B12 and B12 analogs</b>, collectively termed corrinoids. Corrinoids are cofactors involved in the biosynthesis of amino acids and DNA, carbon metabolism, and many specialized metabolic processes. With a focus on corrinoids, the Taga Lab dissects molecular interactions and interdependencies critical to communities. Interestingly, while the majority of microorganisms use corrinoids, only a subset of microbes can produce them. We study the biosynthesis of corrinoids, how bacteria obtain corrinoids from their environment, and the role of corrinoid sharing in microbial community dynamics. We take interdisciplinary approaches combining biochemistry, molecular biology, microbiology, computational modeling, and bioinformatics in innovative ways to investigate three main areas of cofactor sharing:</p>
+    </div>
+    <div class="researchcard">
+      <div class="researchcolumn">
+        <h4 class="researchtitle">What factors determine an organism’s cofactor preference?</h4>
+        <img src="img/research_images/researchimagefactors.jpg" alt="Picture of corrinoid cofactor preference" class=" rightresearchcolumn researchpageimages">
+        <div class="leftresearchcolumn">
+          <p>Organisms <b>require corrinoids with particular structures</b> for growth. However, the molecular basis of preference (selectivity) between corrinoids is poorly understood and cannot yet be predicted. Using biochemistry and molecular biology, we characterize corrinoid-dependent enzymes to identify protein residues responsible for discriminating between different corrinoids. We also investigate the regulatory responses of organisms to the presence of different corrinoids.</p>
+
+          <p>One of the main goals of our work is to bridge sequence and function: to predict from an organism’s genome how different corrinoids will interact with corrinoid-binding proteins. We aim to uncover determinants of corrinoid selectivity in DNA sequences and predict which corrinoids microbes require for growth and survival. Ultimately, we hope to use these predictions to develop new ways to manipulate microbial communities, and help scientists to culture a wider range of microbes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="researchcard">
+      <div class="researchcolumn">
+        <h4 class="researchtitle">How do microbes share nutrients?</h4>
+        <img src="img/research_images/researchimageshare.jpg" alt="Picture of corrinoid sharing nutrients" class=" rightresearchcolumn researchpageimages">
+        <div class="leftresearchcolumn">
+          <p>The majority of <b>organisms cannot produce corrinoids and instead must obtain corrinoids from their environment.</b> Curiously, in contrast to other nutrients, scientists have not discovered a cellular system for exporting corrinoids. The question thus remains: how do corrinoids, produced by a small subset of bacteria, exit cells and become a resource in the environment for consumption by other microbes? Using synthetic co-cultures of cross-feeding bacterial strains, we investigate the role of cell death in nutrient release into the environment.</p>
+
+          <p>Furthermore, in addition to scavenging complete corrinoids, microbes can scavenge precursors to corrinoids. We work to characterize the variety of corrinoid precursors that may be shared by microbes in microbial communities by predicting possible shared precursors with bioinformatics, and testing predictions in culture.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="researchcard">
+      <div class="researchcolumn">  
+        <h4 class="researchtitle">How do microorganisms that share nutrients coexist and coevolve?</h4>
+        <img src="img/research_images/researchimagecoexist.jpg" alt="Picture of bacteria coexisting" class=" rightresearchcolumn researchpageimages">
+        <div class="leftresearchcolumn">
+          <p>The details of how microbes depend on one another nutritionally remains enigmatic. <b>What is the metabolic cost of producing a shared metabolite?</b> How does nutritional interdependence shape the evolutionary trajectory of microbes?</p>
+
+          <p>To address these questions, we developed synthetic co-cultures of metabolically interdependent bacterial strains. To test hypotheses about vitamin B12 interdependence in microbial communities we experimentally manipulate these co-cultures, carry out laboratory evolution experiments, and use computational approaches to model co-culture dynamics.  </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Add a script for a sticky navbar -->
+
+  <script>
+  window.onscroll = function() {myFunction()};
+  window.onload = function() {myFunction()};
+
+  var navbar = document.getElementsByClassName("topnav")[0];
+  var sticky = navbar.offsetTop;
+
+  console.log(navbar)
+
+  function myFunction() {
+      navbar.classList.add("sticky")
+  }
+  </script>
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
