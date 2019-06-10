@@ -207,11 +207,6 @@ body {
   clear: both;
 }
 
-/* Modify the summary introduction on the homepage */
-.summaryintro {
-  padding-bottom: 0%;
-}
-
 /* Modify link colors so that they're orange and pop-out */
 .orangelink {
   color: rgba(51, 51, 51);
@@ -246,8 +241,8 @@ body {
 /* Change columns to 100% when below 800 px */
 @media only screen and (max-width: 800px) {
   .column {
-    width: 100%;
-    padding: 0%;
+    width: 80%;
+    padding: 10%;
   }
 }
 
