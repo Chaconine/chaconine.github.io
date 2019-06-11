@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Joseph Maa -- Website Designer -- josephgmaa@berkeley.edu
 
 # THANKS
 

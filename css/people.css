@@ -76,5 +76,11 @@
 
 .rightpersonnel {
 	width: 40%;
+	font-size: .9em;
+	position: absolute;
+	left: 60%;
+	top: 50%;
+  	transform: translateY(-50%);
+
 }
 
